@@ -8,11 +8,16 @@ fun main (){
     var area = calculateArea(rectangle)
     println(area)
 
-    val rectangle1 = mutableMapOf("Width" to 10, "Height" to 10, "Color" to "Red")
+    val rectangle1 = mutableMapOf("Width" to 10, "Height" to 10, "Color" to "orange", "Area" to area)
     val printOut1 = toString(rectangle1)
     println(printOut1)
 
-    var rectangle2 = mutableMapOf("Width" to 20, "Height" to 10, "Color" to "blue", "Area" to area)
+    var rectangle2 = mutableMapOf("Width" to 30, "Height" to 50, "Color" to "blue", "Area" to area)
     var printOut2 = toString(rectangle2)
     println(printOut2)
+
+    val fizzBuzz = FizzBuzz()
+    val result = fizzBuzz.fizzBuzz(15)
+    println(result)
+
 }
