@@ -1,9 +1,10 @@
 package fundamentos
 
+import com.fundamentos.Fibonacci2
 import com.fundamentos.calculateArea
 import com.fundamentos.toString
 
-fun main (){
+fun main () {
     var rectangle = mutableMapOf("Width" to 10, "Height" to 10, "Color" to "Red")
     var area = calculateArea(rectangle)
     println(area)
@@ -17,7 +18,13 @@ fun main (){
     println(printOut2)
 
     val fizzBuzz = FizzBuzz()
-    val result = fizzBuzz.fizzBuzz(15)
+    val result = fizzBuzz.fizzBuzz(7)
     println(result)
+
+
+    var resultado = Fibonacci2().calculaSeq(10)
+    println(resultado)
+
+    
 
 }
